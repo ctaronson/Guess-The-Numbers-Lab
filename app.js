@@ -42,13 +42,4 @@ const game = {
   }
 }
   
-  //     if (prevGuessesArray[prevGuessArray.length-1] === this.secretNum){
-  //       alert(`Congrats! you guessed the number in ${previousGuessArray.length}`)  
-  //     }else if(prevGuessesArray[prevGuessArray.length-1] > this.secretNum){
-  //       alert('Your guess is too high Previous guesses: x, x, x, x')
-
-  //     }else if(prevGuessesArray[prevGuessArray.length-1] < this.secretNum){
-  //     alert(`your guess is too low ${prevGuessArray}`)
-  //   }
-  // }
 game.play()
