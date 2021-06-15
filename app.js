@@ -24,16 +24,23 @@ const game = {
           this.render(playersGuess)} 
         
       } else {
-        alert('your guess is too high||low')
+        alert('your guess is whack')
         
       }
     },
     render: function (playGuess){
     this.prevGuesses.unshift(playGuess)
-    console.log(this.prevGuesses)
+    if (playGuess >this.secretNum){
+      alert(`your guess is too high.Previous Guesses; ${this.prevGuesses.join(', ')}`)
+      
+    } else if(playGuess <this.secretNum){ 
+      alert(`your guess is too low.Previous Guesses ${this.prevGuesses.join(', ')}`)
+      
+    }else{
+      alert('you win game over')
     }
   }
-
+}
   
   //     if (prevGuessesArray[prevGuessArray.length-1] === this.secretNum){
   //       alert(`Congrats! you guessed the number in ${previousGuessArray.length}`)  
